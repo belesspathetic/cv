@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Artem Zavadskyi - CV</title>
+<style>
+.barcode-space {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #68664E;
+  width: 1000px;
+  margin: 9px auto;
+  text-shadow: 2px 0px #969370;
+}
+.title-space {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  width: 980px;
+  margin: auto 0px;
+  height: 50px;
+  text-shadow: 4px 4px #413F37;
+  background-color: #969370;
+  padding: 0px 10px 20px;
+  box-shadow: inset 3px 3px #969370, inset 0px -8px #68664E ,4px 4px #68664E , -3px -3px #fff ;    
+}
+
+.spoiler{
+  background-color: #ECE9D8;
+  color: transparent;
+  user-select: none;
+}
+
+.spoiler:hover{
+  background-color: inherit;
+  color: inherit;
+}
+
+.centre {
+  width: 1000px;
+  margin: 50px auto;
+  box-shadow: -7px -7px #969370; 
+}
+
+.content { 
+  background: #fff;
+  padding: 0px 40px 40px 10px;
+  box-shadow: inset 3px 3px #969370, inset -4px -4px #C9C6B7 ,4px 4px #68664E , -3px -3px #fff , inset -3px -3px #fff,inset -2px -2px #68664E;    
+  border: 8px solid #ECE9D8; 
+}
+
+.diamond-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: linear-gradient(45deg, #ECE9D8 25%, transparent 25%, transparent 75%, #ECE9D8 75%, #ECE9D8),
+                    linear-gradient(45deg, #ECE9D8 25%, transparent 25%, transparent 75%, #ECE9D8 75%, #ECE9D8);
+  background-size: 40px 40px; /* Adjust the size for a better loop */
+  background-position: 0 0, 20px 20px;
+  animation: marquee 2s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    background-position: 0 40px, 20px 60px;
+  }
+  100% {
+    background-position: 40px 0px, 60px 20px;
+  }
+}
+
+BODY {
+  width: 100%;
+  background: #fff;
+  margin: 0;
+  line-height: 1.0em;
+  font-family: monospace;
+}
+
+HEADER {
+    padding: 25px 0px 0px 0px;
+	font-size: 30px;
+	font-weight: bold;
+    margin-left: 1.0em;
+	color: #120110;
+}
+
+h {
+  padding: 0px 0px 0px 0px;
+  line-height: 1.0em;
+  margin-left: 2.5em;
+  font-weight: bold;
+}
+
+p {
+  padding: 0px 0px 0px 0px;
+  line-height: 1.2em;
+  margin-left: 2.5em;
+}
+
+a {
+    color: #120110;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div class="diamond-pattern"></div>
+<div class="centre">
+<div class="title-space"><br><br>Artem Zavadskyi - CV</div>
+
+<div class="content">
+	<HEADER>Education</HEADER>
+    <p>KiAT - Kyiv Aviation Technical College - Junior specialist - 2021</p>
+    <p>KhAI - Kharkiv Aviation Institute - Bachelor's degree - 2024</p>
+	<HEADER>Work experience</HEADER>	
+	<p> <strong>SE "Antonov"</strong> 2019 </p>
+	<p> Installer of electrical equipment </p>
+    <p>I did an internship at an aircraft manufacturing company.</p>
+    <p> Handle connectors, harnesses, wires, and electrical circuits.
+        Utilize assembly and docking technologies for various components. </p>
+    <p> <strong>Db Schenker</strong> 2019 - 2021</p>
+	<p> Warehouse worker </p>
+    <p>Worked as a stock picker in an international company.</p>
+    <p> <strong>SE "UCRF"</strong> 2023 </p>
+	<p> Engineer of the 1st category </p>
+
+    <p>Worked as an engineer in the certification center at the Ukrainian State Radio Frequency Center.
+    Сustomer support in laboratory workflow issues.
+    Collecting information from quartz signal analyzers, placing antennas in the lunar chamber for testing.
+    Measurement of frequency, range, search for inconsistencies with the technical regulations of communication modules (Wi-Fi, Bluetooth, GSM). </p>
+    <p> <strong>TP-Link Ukraine</strong> 2024 - until now</p>
+	<p> Technical support engineer </p>
+    <p> Provided expert technical support for a wide range of TP-Link networking products, resolving customer inquiries via phone, email, and live chat.
+        Diagnosed and troubleshot complex network issues, ensuring a high rate of first-contact resolution and customer satisfaction.
+        Collaborated with the product development team to identify and escalate product-related issues, contributing to ongoing improvements and feature enhancements.
+        Developed and maintained comprehensive documentation, including FAQs, troubleshooting guides, and user manuals to assist customers and improve team efficiency.
+        Conducted training sessions for new team members on technical processes and customer service best practices.
+        Utilized CRM tools to track customer interactions, monitor trends, and generate reports to inform service improvements. </p>
+	<HEADER>Skills</HEADER>
+	<br>
+	<ul>
+		<li>
+			<strong>Programing:</strong>
+			<ul>
+				<li>Rust</li>
+				<li>HTML</li>
+				<li>Tailwind CSS</li>
+				<li>Graph API (Facebook API)</li>
+                <li>YouTube API</li>
+                <li>ffmpeg</li>
+			</ul>
+		</li>
+        <li>
+			<strong>Networking:</strong>
+			<ul>
+				<li>TCP/IP</li>
+				<li>DHCP</li>
+				<li>VPN</li>
+                <li>WLAN</li>
+                <li>VLAN</li>
+                <li>QoS</li>
+                <li>Dynamic, Static IP, Routing</li>
+			</ul>
+		</li>
+		<li>
+			<strong>Languages:</strong>
+			<ul>
+				<li>Native Ukrainian</li>
+				<li>Native Russian</li>
+				<li>Upper-intermidiate English</li>
+			</ul>
+		</li>
+	</ul>     
+	
+	<HEADER>Sertificates</HEADER>
+	<ul>
+		<li>
+			<a href="./ocna_cert.pdf"target="_blank">OCNA</a>
+		</li>
+	</ul>
+
+    <HEADER>Contacts</HEADER>
+	<p>Kyiv, Ukraine</p>
+    <ul>
+		<li>
+            <a href="https://t.me/belesspathetic" target="_blank"><span>t.me/belesspathetic</span></a>
+		</li>
+        <br>
+        <li>
+            <a href="https://github.com/belesspathetic" target="_blank"><span>github.com/belesspathetic</span></a>
+		</li>
+        <br>
+        <li>
+            <a href="mailto:haramzayka@gmail.com?subject=Mail from CV page" target="_blank">haramzayka@gmail.com</a>
+		</li>
+        <br>
+        <li>
+            <a href="tel:+380 98 041 92 23">+380 98 041 92 23</a>
+		</li>
+	</ul>
+</div>
+<div class="barcode-space">
+█ │█│ █ █ █  █│█ █ │ █│ </div>
+</div>
+</body>
+</html>
