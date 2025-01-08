@@ -4,14 +4,23 @@
 <title>Artem Zavadskyi - CV</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #292418;
+  z-index: -3;
+}
 .barcode-space {
   text-align: right;
   font-size: 20px;
   font-weight: bold;
-  color: #68664E;
+  color: #8b7d62;
   width: 1000px;
   margin: 9px auto;
-  text-shadow: 2px 0px #969370;
+  text-shadow: 2px 0px #73654a;
 }
 .title-space {
   font-size: 40px;
@@ -20,14 +29,14 @@
   width: 980px;
   margin: auto 0px;
   height: 50px;
-  text-shadow: 4px 4px #413F37;
-  background-color: #969370;
+  text-shadow: 4px 4px #524839;
+  background-color: #73654a;
   padding: 0px 10px 20px;
-  box-shadow: inset 3px 3px #969370, inset 0px -8px #68664E ,4px 4px #68664E , -3px -3px #fff ;    
+  box-shadow: inset 3px 3px #73654a, inset 0px -8px #8b7d62 ,4px 4px #8b7d62 , -3px -3px #8b7d62 ;    
 }
 
 .spoiler{
-  background-color: #ECE9D8;
+  background-color: #cdba94;
   color: transparent;
   user-select: none;
 }
@@ -40,42 +49,19 @@
 .centre {
   width: 1000px;
   margin: 50px auto;
-  box-shadow: -7px -7px #969370; 
+  box-shadow: -7px -7px #73654a; 
 }
 
 .content { 
-  background: #fff;
+  background: #e6ceac;
   padding: 0px 40px 40px 10px;
-  box-shadow: inset 3px 3px #969370, inset -4px -4px #C9C6B7 ,4px 4px #68664E , -3px -3px #fff , inset -3px -3px #fff,inset -2px -2px #68664E;    
-  border: 8px solid #ECE9D8; 
-}
-
-.diamond-pattern {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  background-image: linear-gradient(45deg, #ECE9D8 25%, transparent 25%, transparent 75%, #ECE9D8 75%, #ECE9D8),
-                    linear-gradient(45deg, #ECE9D8 25%, transparent 25%, transparent 75%, #ECE9D8 75%, #ECE9D8);
-  background-size: 40px 40px; /* Adjust the size for a better loop */
-  background-position: 0 0, 20px 20px;
-  animation: marquee 2s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    background-position: 0 40px, 20px 60px;
-  }
-  100% {
-    background-position: 40px 0px, 60px 20px;
-  }
+  box-shadow: inset 3px 3px #a48d6a, inset -4px -4px #bda583  ,4px 4px #8b7d62  , -3px -3px #e6ceac  , inset -3px -3px #e6ceac  ,inset -2px -2px #8b7d62;    
+  border: 8px solid #cdba94; 
 }
 
 BODY {
   width: 100%;
-  background: #fff;
+  background: #292418;
   margin: 0;
   line-height: 1.0em;
   font-family: 'Roboto Mono', monospace;
@@ -83,10 +69,9 @@ BODY {
 
 HEADER {
     padding: 25px 0px 0px 0px;
-	font-size: 30px;
-	font-weight: bold;
+	  font-size: 30px;
+	  font-weight: bold;
     margin-left: 1.0em;
-	color: #120110;
 }
 
 h {
@@ -102,20 +87,10 @@ p {
   margin-left: 2.5em;
 }
 
-a {
-    color: #120110;
-    text-decoration: none; 
-}
-
-a:hover {
-    color: #ff6600;
-    text-decoration: underline;
-}
 </style>
 </head>
 <body>
-
-<div class="diamond-pattern"></div>
+<canvas id="confettiCanvas"></canvas>
 <div class="centre">
 <div class="title-space"><br><br>Artem Zavadskyi - CV</div>
 
@@ -131,7 +106,7 @@ a:hover {
         Utilize assembly and docking technologies for various components. </p>
     <p> <strong>Db Schenker</strong> 2019 - 2021</p>
 	<p> Warehouse worker </p>
-    <p>Worked as a stock picker in an international company.</p>
+    <p>Mastered warehouse equipment, including electric forklift and stacker, and learned to efficiently use a mobile data terminal (MDC) scanner for order picking in an international company.</p>
     <p> <strong>SE "UCRF"</strong> 2023 </p>
 	<p> Engineer of the 1st category </p>
 
@@ -155,10 +130,7 @@ a:hover {
 			<ul>
 				<li>Rust</li>
 				<li>HTML</li>
-				<li>Tailwind CSS</li>
-				<li>Graph API (Facebook API)</li>
-                <li>YouTube API</li>
-                <li>ffmpeg</li>
+        <li>ffmpeg</li>
 			</ul>
 		</li>
         <li>
@@ -170,21 +142,18 @@ a:hover {
                 <li>WLAN</li>
                 <li>VLAN</li>
                 <li>QoS</li>
-                <li>Dynamic, Static IP, Routing</li>
-			</ul>
-		</li>
-		<li>
-			<strong>Languages:</strong>
-			<ul>
-				<li>Native Ukrainian</li>
-				<li>Native Russian</li>
-				<li>Upper-intermidiate English</li>
 			</ul>
 		</li>
 	</ul>     
 	
-	<HEADER>Sertificates</HEADER>
+	<HEADER>Diploma and Certificates</HEADER>
 	<ul>
+    <li>
+      <a href="./junior_specialist_diploma.pdf"target="_blank">Junior Specialist Diploma</a>
+    </li>
+    <li>
+      <a href="./bachelor's_diploma.pdf"target="_blank">Bachelor's Diploma</a>
+    </li>
 		<li>
 			<a href="./ocna_cert.pdf"target="_blank">OCNA</a>
 		</li>
@@ -213,5 +182,81 @@ a:hover {
 <div class="barcode-space">
 █ │█│ █ █ █  █│█ █ │ █│ </div>
 </div>
+
+
+
+
+
+
+
+
+
+<script>
+  const canvas = document.getElementById('confettiCanvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const confettiArray = [];
+  const colors = ['#524839', '#73654a', '#8b7d62', '#a48d6a', '#bda583', '#cdba94', '#e6ceac'];
+
+  class Confetti {
+      constructor(x, y, color, size, opacity) {
+          this.x = x;
+          this.y = y;
+          this.color = color;
+          this.size = size;
+          this.opacity = opacity;
+          this.speedY = Math.random() * 2 + 1;
+          this.fadeRate = Math.random() * 0.01 + 0.005;
+      }
+
+      draw() {
+          ctx.globalAlpha = this.opacity;
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.moveTo(this.x, this.y);
+          ctx.lineTo(this.x - this.size, this.y + this.size * 2); 
+          ctx.lineTo(this.x + this.size, this.y + this.size * 2);
+          ctx.closePath();
+          ctx.fill();
+          // ctx.globalAlpha = 1.0;
+      }
+
+      update() {
+          this.y += this.speedY;
+      }
+  }
+
+  function addConfetti() {
+      const x = Math.random() * canvas.width;
+      const y = -100;
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const size = Math.random() * 25 + 5;
+      const opacity = Math.random() * 0.5 + 0.2;
+      confettiArray.push(new Confetti(x, y, color, size, opacity));
+  }
+
+  function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      confettiArray.forEach((confetti, index) => {
+          confetti.update();
+          confetti.draw();
+
+          if (confetti.opacity <= 0) {
+              confettiArray.splice(index, 1);
+          }
+      });
+      requestAnimationFrame(animate);
+  }
+
+  setInterval(addConfetti, 200);
+  animate();
+
+  window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+  });
+</script>
 </body>
 </html>
